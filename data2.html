@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Blog-Details</title>
+
+
+  
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.min.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="style.css">
+
+  <!--
+    - google font link
+  -->
+  <link href="https://fonts.googleapis.com/css?family=Manrope:200,300,regular,500,600,700,800" rel="stylesheet" />
+
+</head>
+
+<body>
+
+
+
+  
+  <header>
+
+    <div class="container">
+
+      <nav class="navbar">
+
+        <a href="index.html">
+          <h1  width="150" height="40" class="logo-light">MiniXamBlog-</h1> 
+        </a>
+
+        <div class="btn-group">
+
+         
+
+          <button class="nav-menu-btn">
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+
+        </div>
+
+        <div class="flex-wrapper">
+
+          <ul class="desktop-nav">
+
+            <li>
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+
+            <li>
+              <a href="about.html" class="nav-link">About Us</a>
+            </li>
+
+            <li>
+              <a href="cont.html" class="nav-link">Contact Us</a>
+            </li>
+
+          </ul>
+
+          
+
+        </div>
+
+  <!--
+      - article card
+    -->
+
+  <article class="article-card">
+
+    <div class="img-box">
+      <img src="assets/images/blog-1.png" alt="" class="article-banner">
+    </div>
+
+
+    <div class="article-content">
+
+     
+
+      <p class="article-text">Ad-hoc queries
+        MongoDB supports field, range query, and regular-expression searches.[29] Queries can return specific fields of documents and also include user-defined JavaScript functions. Queries can also be configured to return a random sample of results of a given size.
+        
+        Indexing
+        Fields in a MongoDB document can be indexed with primary and secondary indices or index.
+        
+        Replication
+        MongoDB provides high availability with replica sets.[30] A replica set consists of two or more copies of the data. Each replica-set member may act in the role of primary or secondary replica at any time. All writes and reads are done on the primary replica by default. Secondary replicas maintain a copy of the data of the primary using built-in replication. When a primary replica fails, the replica set automatically conducts an election process to determine which secondary should become the primary. Secondaries can optionally serve read operations, but that data is only eventually consistent by default.
+        
+        If the replicated MongoDB deployment only has a single secondary member, a separate daemon called an arbiter must be added to the set. It has a single responsibility, which is to resolve the election of the new primary.[31] As a consequence, an idealized distributed MongoDB deployment requires at least three separate servers, even in the case of just one primary and one secondary.[31]
+        
+        Load balancing
+        MongoDB scales horizontally using sharding.[32] The user chooses a shard key, which determines how the data in a collection will be distributed. The data is split into ranges (based on the shard key) and distributed across multiple shards. (A shard is a master with one or more replicas.) Alternatively, the shard key can be hashed to map to a shard – enabling an even data distribution.
+        
+        MongoDB can run over multiple servers, balancing the load or duplicating data to keep the system up and running in case of hardware failure.
+        
+        File storage
+        MongoDB can be used as a file system, called GridFS, with load balancing and data replication features over multiple machines for storing files.
+        
+        This function, called grid file system,[33] is included with MongoDB drivers. MongoDB exposes functions for file manipulation and content to developers. GridFS can be accessed using mongofiles utility or plugins for Nginx[34] and lighttpd.[35] GridFS divides a file into parts, or chunks, and stores each of those chunks as a separate document.[36]
+        
+        Aggregation
+        MongoDB provides three ways to perform aggregation: the aggregation pipeline, the map-reduce function, and single-purpose aggregation methods.[37]
+        
+        Map-reduce can be used for batch processing of data and aggregation operations. But according to MongoDB's documentation, the Aggregation Pipeline provides better performance for most aggregation operations.[38]
+        
+        The aggregation framework enables users to obtain the kind of results for which the SQL GROUP BY clause is used. Aggregation operators can be strung together to form a pipeline – analogous to Unix pipes. The aggregation framework includes the $lookup operator which can join documents from multiple collections, as well as statistical operators such as standard deviation.
+        
+        Server-side JavaScript execution
+        JavaScript can be used in queries, aggregation functions (such as MapReduce), and sent directly to the database to be executed.
+        
+        Capped collections
+        MongoDB supports fixed-size collections called capped collections. This type of collection maintains insertion order and, once the specified size has been reached, behaves like a circular queue.
+        
+        Transactions
+        MongoDB claims to support multi-document ACID transactions since the 4.0 release in June 2018.[39] This claim was found to not be true as MongoDB violates snapshot isolation.[40]
+      </p>
+
+      <div class="acticle-content-footer">
+
+        <div class="author">
+          <img src="fri.jpg" alt="" class="author-avater">
+
+          <div class="author-info">
+            <a href="#">
+              <h4 class="author-name">Sadique</h4>
+            </a>
+            <div class="publish-date">28 Jun 2022</div>
+          </div>
+        </div>
+
+
+        <div class="share">
+
+          <button class="share-button">
+            <ion-icon name="arrow-redo"></ion-icon>
+          </button>
+
+          <div class="share-option">
+            <span>Share</span>
+
+            <a href="#">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+            <a href="#">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+            <a href="#">
+              <ion-icon name="logo-pinterest"></ion-icon>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </article>
+
+
+
+
+
+
+  <!--
+    - internal script
+  -->
+  <script>
+
+    const shareOption = document.querySelector('.share-option');
+
+    document.querySelector('.share-button').addEventListener('click', function () {
+      this.classList.toggle('active');
+      shareOption.classList.toggle('active');
+    });
+
+  </script>
+
+  <!--
+    - ionicon link
+  -->
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

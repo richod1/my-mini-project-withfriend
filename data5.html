@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Article preview component</title>
+
+
+  
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.min.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="style.css">
+
+  <!--
+    - google font link
+  -->
+  <link href="https://fonts.googleapis.com/css?family=Manrope:200,300,regular,500,600,700,800" rel="stylesheet" />
+
+</head>
+
+<body>
+
+
+
+  
+  <header>
+
+    <div class="container">
+
+      <nav class="navbar">
+
+        <a href="index.html">
+          <h1  width="150" height="40" class="logo-light">MiniXamBlog-</h1> 
+        </a>
+
+        <div class="btn-group">
+
+         
+
+          <button class="nav-menu-btn">
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+
+        </div>
+
+        <div class="flex-wrapper">
+
+          <ul class="desktop-nav">
+
+            <li>
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+
+            <li>
+              <a href="about.html" class="nav-link">About Us</a>
+            </li>
+
+            <li>
+              <a href="cont.html" class="nav-link">Contact Us</a>
+            </li>
+
+          </ul>
+
+          
+
+        </div>
+
+  <!--
+      - article card
+    -->
+
+  <article class="article-card">
+
+    <div class="img-box">
+      <img src="images/th.webp" alt="" class="article-banner">
+    </div>
+
+
+    <div class="article-content">
+
+      <a href="#">
+        <h3 class="article-title">Shift the overall look and feel by adding these wonderful
+          touches to furniture in your home</h3>
+      </a>
+
+      <p class="article-text">What's an API?
+        An API is a set of definitions and protocols for building and integrating application software. It’s sometimes referred to as a contract between an information provider and an information user—establishing the content required from the consumer (the call) and the content required by the producer (the response). For example, the API design for a weather service could specify that the user supply a zip code and that the producer reply with a 2-part answer, the first being the high temperature, and the second being the low.  
+        
+        In other words, if you want to interact with a computer or system to retrieve information or perform a function, an API helps you communicate what you want to that system so it can understand and fulfill the request. 
+        
+        You can think of an API as a mediator between the users or clients and the resources or web services they want to get. It’s also a way for an organization to share resources and information while maintaining security, control, and authentication—determining who gets access to what. 
+        
+        Another advantage of an API is that you don’t have to know the specifics of caching—how your resource is retrieved or where it comes from.</p>
+
+      <div class="acticle-content-footer">
+
+        <div class="author">
+          <img src="./images/avatar-fri.jpg" alt="" class="author-avater">
+
+          <div class="author-info">
+            <a href="#">
+              <h4 class="author-name">Sadique</h4>
+            </a>
+            <div class="publish-date">28 Jun 2022</div>
+          </div>
+        </div>
+
+
+        <div class="share">
+
+          <button class="share-button">
+            <ion-icon name="arrow-redo"></ion-icon>
+          </button>
+
+          <div class="share-option">
+            <span>Share</span>
+
+            <a href="#">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+            <a href="#">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+            <a href="#">
+              <ion-icon name="logo-pinterest"></ion-icon>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </article>
+
+
+
+
+
+
+  <!--
+    - internal script
+  -->
+  <script>
+
+    const shareOption = document.querySelector('.share-option');
+
+    document.querySelector('.share-button').addEventListener('click', function () {
+      this.classList.toggle('active');
+      shareOption.classList.toggle('active');
+    });
+
+  </script>
+
+  <!--
+    - ionicon link
+  -->
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
